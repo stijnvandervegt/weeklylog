@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Jobs;
+namespace WeeklyLog\Jobs;
 
 use Illuminate\Bus\Queueable;
 

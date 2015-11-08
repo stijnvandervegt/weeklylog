@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace WeeklyLog\Http\Controllers\Auth;
 
-use App\User;
+use WeeklyLog\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use WeeklyLog\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
@@ -43,7 +43,7 @@ class AuthController extends Controller
     {
         return Validator::make($data, [
             'name' => 'required|max:255',
-            'email' => 'required|email|max:255|unique:users',
+            'email' => 'required|email|max:255|unique:user',
             'password' => 'required|confirmed|min:6',
         ]);
     }

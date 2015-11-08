@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace WeeklyLog\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
